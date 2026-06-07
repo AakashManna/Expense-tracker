@@ -1,0 +1,120 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.totalCard,
+.highestCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.totalCard {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px -8px var(--accent);
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.totalAmount {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.highestAmount {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.highestNote {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.categories {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.catRow { display: flex; flex-direction: column; gap: 6px; }
+
+.catHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.catDot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.catName { flex: 1; color: var(--text-sub); }
+
+.editBudgetBtn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 2px;
+  transition: color var(--transition);
+}
+.editBudgetBtn:hover { color: var(--accent); }
+
+.catAmount {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.catAmount.over { color: var(--red); }
+
+.budgetOf {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.bar {
+  height: 4px;
+  background: var(--surface-2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}

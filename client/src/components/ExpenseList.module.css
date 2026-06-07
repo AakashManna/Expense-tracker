@@ -1,0 +1,160 @@
+.wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table thead tr {
+  background: var(--surface-2);
+}
+
+.table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.table tbody tr {
+  border-top: 1px solid var(--border);
+  transition: background var(--transition);
+}
+
+.table tbody tr:hover {
+  background: var(--surface);
+}
+
+.table td {
+  padding: 14px 16px;
+  vertical-align: middle;
+  color: var(--text-sub);
+}
+
+.rowEditing {
+  background: var(--surface) !important;
+}
+
+.dateCell {
+  font-size: 13px;
+  white-space: nowrap;
+  color: var(--muted) !important;
+}
+
+.catBadge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.noteCell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.noNote { color: var(--border); }
+
+.right { text-align: right !important; }
+
+.amount {
+  font-weight: 500;
+  color: var(--text) !important;
+  white-space: nowrap;
+}
+
+.actions {
+  white-space: nowrap;
+  text-align: right;
+  width: 80px;
+}
+
+.iconBtn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  transition: all var(--transition);
+}
+.iconBtn:hover { color: var(--accent); border-color: var(--border); }
+
+.deleteBtn:hover { color: var(--red) !important; border-color: var(--red) !important; }
+
+/* Edit row */
+.editRow td { padding: 0 !important; background: var(--surface) !important; }
+.editWrapper {
+  padding: 16px;
+  border-top: 2px solid var(--accent);
+}
+
+/* Confirm row */
+.confirmRow td { padding: 0 !important; background: var(--surface) !important; }
+.confirmWrapper {
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--text-sub);
+  border-top: 2px solid var(--red);
+}
+
+.confirmYes {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 6px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.confirmNo {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.emptyIcon {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 12px;
+  opacity: 0.3;
+}
+
+.emptySub {
+  font-size: 13px;
+  margin-top: 6px;
+}
